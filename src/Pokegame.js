@@ -27,9 +27,12 @@ class Pokegame extends Component {
       hand1.push(randPokemon);
     }
 
-    // experience total
-    let exp1 = hand1.reduce((exp, pokemon) => exp + pokemon.base_experience, 0);
-    let exp2 = hand2.reduce((exp, pokemon) => exp + pokemon.base_experience, 0);
+    // reduce function to compute total experience sum
+    const sumExperience = (list) =>
+      list.reduce((exp, pokemon) => exp + pokemon.base_experience, 0);
+
+    let exp1 = sumExperience(hand1);
+    let exp2 = sumExperience(hand2);
 
     return (
       <div className="Pokegame">
