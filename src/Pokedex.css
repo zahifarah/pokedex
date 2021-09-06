@@ -1,5 +1,36 @@
+.Pokedex {
+  text-align: center;
+  border-bottom: 1.5px dashed rgba(0, 0, 0, 0.283);
+}
+
+.Pokedex:last-child {
+  border: none;
+}
+
 .Pokedex-cards {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.Pokedex-player {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.Pokedex-xp {
+  margin-top: -5px;
+}
+
+.Pokedex-result {
+  margin-top: -10px;
+}
+
+.Pokedex-winner {
+  color: seagreen;
+}
+
+.Pokedex-loser {
+  color: salmon;
 }
